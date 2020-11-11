@@ -1,0 +1,450 @@
+/*начало подключения шрифтов*/
+
+@font-face {
+font-family: 'Montserrat Regular';
+src: url('../fonts/Montserrat-Regular.eot');
+src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Montserrat-Regular.woff') format('woff'),
+url('../fonts/Montserrat-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Montserrat Bold';
+src: url('../fonts/Montserrat-ExtraBold.eot');
+src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'PT Serif Regular';
+src: url('../fonts/PTSerif-Regular.eot');
+src: url('../fonts/PTSerif-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/PTSerif-Regular.woff') format('woff'),
+url('../fonts/PTSerif-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {font-family:"COUTURE Bold";
+src:url("../fonts/COUTURE-Bold.eot?") format("eot"),url("../fonts/COUTURE-Bold.woff") format("woff"),url("../fonts/COUTURE-Bold.ttf") format("truetype"),url("../fonts/COUTURE-Bold.svg#COUTURE-Bold") format("svg");font-weight:normal;font-style:normal;}
+/*конец подключения шрифтов*/
+
+/* обьявляем переменные */
+
+$red : #c62314; 
+$violet: #130e27;
+$gray: #eeeeee;
+
+/* конец обьявления переменных */
+
+/* Начало верстки меню */
+
+.header{
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position:fixed;
+
+    .header__logo{
+        transition: 0.3s;
+        padding-top: 38px;
+        width: 289px;
+    }
+    .header__container{
+        width: 1011px;
+        margin: 0 auto;
+    }
+    .header__flex-wrap{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .header__links{
+        transition: 0.3s;
+        font-family: 'Montserrat Regular';
+        display: inline-block;
+        color:#fff;
+        font-size: 18px;
+        padding: 11px 11px 11px 11px; //резервирую место для дальнейшего перекрашивания через hover 
+        margin-right: 32px;
+        border-radius: 5px;
+        margin-top: 60px;
+
+        &:hover{
+        background-color:$violet;
+        }
+
+        &:last-child{
+        margin-right: 0;
+        }
+
+        }
+        .header__links-a{
+            color:white;
+        }
+
+      }
+.header-fixed{
+    z-index: 5;
+    background: $red;
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position:fixed;
+    .header__logo{
+        transition: 0.3s;
+        padding-top: 0px;
+        width: 289px;
+    }
+    .header__container{
+        width: 1011px;
+        margin: 0 auto;
+    }
+    .header__flex-wrap{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .header__links{
+        transition: 0.3s;
+        font-family: 'Montserrat Regular';
+        display: inline-block;
+        color:#fff;
+        font-size: 18px;
+        padding: 11px 11px 11px 11px; //резервирую место для дальнейшего перекрашивания через hover 
+        margin-right: 32px;
+        border-radius: 5px;
+        margin-top: 30px;
+
+        &:hover{
+        background-color:$violet;
+        }
+
+        &:last-child{
+        margin-right: 0;
+        }
+
+        }
+        .header__links-a{
+            color:white;
+        }
+
+      
+}
+
+/* Конец верстки меню */
+
+/*Начало верстки первой страницы */
+
+.container{
+        width: 1011px;
+        margin: 0 auto;
+        }
+.first-page{
+    background: url(../img/first_bg.png);
+    height: 100vh;
+    background-size: cover;
+    height: 688px;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__big-text{
+        display:flex;
+        font-family: 'Montserrat Bold';
+        padding-top: 265px;
+        font-size: 90px;
+        width: 528px;
+        color:white;
+        margin-left: 21px;
+        line-height: 80px;
+        padding-bottom: 45px;
+    }
+    &__small-text{
+        font-family: 'PT Serif Regular';
+        color:white;
+        font-size: 20px;
+        max-width: 521px;
+        line-height: 28px;
+        margin-left: 21px;
+    }
+    
+
+    &__right{
+        margin-top: 253px;
+        width: 399px;
+        height: 520px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */;
+
+
+    }
+    &__right-title{
+        font-family: 'Montserrat Regular';
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 33px;
+        margin-bottom: 38px;
+    }
+    &__input{
+        font-family: 'PT Serif Regular';
+        background-color: $gray;
+        height: 57px;   
+        width: 354px;   
+        margin-bottom: 16px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        font-size: 20px;
+        padding-left: 17px; 
+
+    }
+
+}
+.colorfull-text{
+            color:$violet;
+            width: 502px;
+        }
+
+.first-page__forms:nth-last-child(2){
+    padding-bottom: 26px;
+}
+
+.first-page__checkbox{
+    margin-left: 22.5px;
+    margin-bottom: 22px;
+
+}
+
+.checkbox__inner   {
+    width: 18px;
+    height: 18px;
+    margin-right: 23px;
+
+}
+.checkbox__text{
+    font-family: 'PT Serif Regular';
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+.first-page__right-button {
+    font-family: 'Montserrat Regular';
+    font-size: 22px;
+    color:white;
+    padding-right: 158px;
+    padding-left: 134px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: $red;
+    border-radius: 5px ;
+    margin-left: 22.5px;
+}
+.first-page__right-button:hover{
+    background-color:#8B0000 ;
+    transition: 0.2s;
+}
+
+/*Конец верстки первой страницы */
+
+/*Начало верстки второй страницы */
+
+.second-page {}
+.title {
+    font-family:"COUTURE Bold";
+    font-size: 50px;   
+    color:$red; 
+}
+.second-page__title {
+    padding-left: 17px;
+    padding-top: 44px;  
+    margin-bottom: 87px;    
+}
+.second-page__colorfull-text{
+
+}
+.title-inner {
+
+}
+.second-content {
+    display: flex;  
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+.second-content__child {
+
+}
+.second-content__image {
+    height: 155px;
+    padding-bottom: 46px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.second-content__text {
+    font-family: 'PT Serif Regular';
+    width: 176px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 66px;
+}
+.second-content_text {}
+
+/*Конец верстки второй страницы */
+
+/* начало верстки третьей страницы */
+
+.third-page {
+    height: 120px;
+    background-color:$violet;
+    display: flex;
+}
+.third-page__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.third-page__text {
+    font-family: 'PT Serif Regular';
+    display: inline-flex;
+    font-size: 20px;
+    color:white;
+    width: 630px;
+    line-height: 28px;
+    padding-top: 30px;
+}
+.third-page__text-inner {}
+.third-page__button {
+    display: inline-flex;
+    margin-top: 31px;
+}
+.third-page__button-inner {
+    font-family: 'Montserrat Regular';
+    font-size: 22px;    
+    color:white;
+    padding-left: 65px;
+    padding-right: 76px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    background-color: $red;
+    border-radius: 5px;
+}
+.third-page__button-inner:hover{
+    background-color:#8B0000 ;
+    transition: 0.2s;
+}
+
+/* конец верстки третьей страницы */
+
+/* начало верстки четвертой страницы */
+
+.four-page {
+    background-color: $gray;
+}
+.four-page__wrap {
+
+}
+.four-page__title{
+    color:$violet;
+    text-align: center;
+    padding-top: 65px;
+}
+.title {
+
+}
+.four-page__boards {
+    display: flex;
+    justify-content: space-between;
+
+}
+.four-page__board {
+    position: inherit;
+    width: 318px;
+    height: 378px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+.four-page__board-triangle{
+    display: inline-flex;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3.5em 3.5em 3.5em 3.5em; /* размер и форма */ 
+    border-color: $red transparent transparent $red;  /* red — цвет */ 
+    z-index: 1;
+}
+.four-page__board-triangle-text{
+    position: absolute;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+    margin-left: -42px;
+    margin-top: -20px;
+    font-family: 'PT Serif Regular';
+    font-size: 16px;
+    background: $red;
+
+}
+.four-page__board-small-title {
+    font-family: 'PT Serif Regular';
+    
+    font-size: 22px;
+    color:#161616;
+    text-align: center;
+    margin-top: 37px;
+    padding-bottom: 42px;
+}
+.four-page__board-price {
+    font-family: 'Montserrat Bold';
+    font-size: 60px;
+    color:$red;
+    text-align: center;
+    padding-bottom: 33px;
+}
+.four-page__board-text {
+    font-family: 'PT Serif Regular';
+    font-size: 20px;    
+    text-align: center; 
+    padding-bottom: 40px;
+
+}
+.four-page__board-button {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.four-page__board-button-inner {
+    font-family:'Montserrat Regular';
+    font-size: 20px;    
+    width: 205px;   
+    background-color: $violet;
+    color:white;
+    height: 50px;   
+    border-radius: 5px;
+    bottom:0px;
+    transition: 0.2s;
+}
+.four-page__board-button-inner:hover{
+    background-color: $red;
+    transition: 0.2s;
+}
+
+/* Конец верстки четвертой страницы */
