@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 /*конец подключения шрифтов*/
+/* Конец верстки четвертой страницы */
 /* обьявляем переменные */
 /* конец обьявления переменных */
 /* Начало верстки меню */
@@ -303,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 /*Конец верстки первой страницы */
 /*Начало верстки второй страницы */
 .title {
-  font-family: "COUTURE Bold";
+  font-family: "Montserrat bold";
   font-size: 50px;
   color: #c62314;
 }
@@ -392,6 +393,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #130e27;
   text-align: center;
   padding-top: 65px;
+  margin-bottom: 58px;
 }
 
 .four-page__boards {
@@ -479,6 +481,145 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Конец верстки четвертой страницы */
-body {
-  font-size: 14px;
+/* начало верстки пятой страницы */
+.five-page {
+  height: 690px;
 }
+
+.five-page__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.five-page__testimonial {
+  width: 500px;
+  height: 420px;
+}
+
+.five-page__testimonial-title {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 60px;
+}
+
+.five-page__testimonial-title-inner {
+  color: #130e27;
+}
+
+.five-page__persons {
+  width: 100%;
+}
+
+.five-page__person-card {
+  display: flex;
+}
+
+.five-page__person-card-boy {
+  padding-bottom: 88px;
+}
+
+.five-page__person-card-text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.five-page__person-card-text {
+  font-family: "PT Serif Regular";
+  font-size: 20px;
+  width: 352px;
+  display: inline-flex;
+  margin-bottom: 23px;
+}
+
+.five-page__person-card-name {
+  font-family: "Montserrat Regular";
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-flex;
+  color: #130e27;
+}
+
+.five-page__person-card-image {
+  display: inline-flex;
+}
+
+.five-page__person-card-text-girl {
+  color: #c62314;
+}
+
+.five-page__testimonial-background {
+  width: 440px;
+  height: 142px;
+  position: absolute;
+  background-color: #eeeeee;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.fff {
+  display: inherit;
+}
+
+/* конец верстки testimonial */
+/* gallery */
+.five-page__gallery {
+  width: 440px;
+  height: 420px;
+}
+
+.five-page__gallery-title {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 60px;
+}
+
+.five-page__gallery-wrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.five-page__gallery-image {
+  padding-bottom: 18px;
+}
+
+.five-page__link {
+  font-family: "Montserrat Regular";
+  font-size: 20px;
+  text-align: center;
+}
+
+.five-page__link-inner {
+  border-bottom: 2px solid #130e27;
+  color: #130e27;
+}
+
+/* конец gallery */
+/* конец верстки пятой страницы */
+/* footer */
+.footer {
+  background-color: #130e27;
+  height: 184px;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__rights {
+  font-family: "PT Serif Regular";
+  color: white;
+  font-size: 20px;
+  padding-top: 80px;
+}
+
+.footer__colorfull-text {
+  color: #c62314;
+}
+
+.footer__logo {
+  padding-top: 62px;
+}
+
+/* footer */
